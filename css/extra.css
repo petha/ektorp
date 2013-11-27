@@ -1,0 +1,4 @@
+.reveal section img, .reveal pre  {
+	box-shadow: none !important;
+	border: none !important;
+}
