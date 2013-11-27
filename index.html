@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>reveal.js - The HTML Presentation Framework</title>
+		<title>Programmera med Significant Bit</title>
 
 		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
 		<meta name="author" content="Hakim El Hattab">
@@ -15,7 +15,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 		<link rel="stylesheet" href="css/reveal.min.css">
-		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+		<link rel="stylesheet" href="css/theme/solarized.css" id="theme">
 
 		<!-- For syntax highlighting -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -24,6 +24,9 @@
 		<script>
 			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
 		</script>
+		
+		<link rel="stylesheet" href="css/extra.css">
+
 
 		<!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
@@ -34,320 +37,509 @@
 
 		<div class="reveal">
 
-			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section>
-					<h1>Reveal.js</h1>
-					<h3>HTML Presentations Made Easy</h3>
+					<h1>Programmering</h1>
 					<p>
-						<small>Created by <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small>
+						<small><a href="http://significantbit.se">Significant Bit</a></small>
 					</p>
+					<aside class="notes">
+						Hej och välkomna! Vissa delar blir avancerade och jag förväntar mig inte att ni skall förstå allt.
+						Jag kör igenom lite snabbt och sedan går vi runt och hjälper er igång.
+					</aside>	
 				</section>
 
 				<section>
-					<h2>Heads Up</h2>
-					<p>
-						reveal.js is a framework for easily creating beautiful presentations using HTML. You'll need a browser with
-						support for CSS 3D transforms to see it in its full glory.
-					</p>
-
+					<h1>Vilka är vi</h1>
 					<aside class="notes">
-						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
+						Jag kommer från ett företag som heter Significant Bit och heter Peter. Jag har med min kollega och bror Johan.
+
 					</aside>
 				</section>
 
-				<!-- Example of nested vertical slides -->
 				<section>
-					<section>
-						<h2>Vertical Slides</h2>
-						<p>
-							Slides can be nested inside of other slides,
-							try pressing <a href="#" class="navigate-down">down</a>.
-						</p>
-						<a href="#" class="image navigate-down">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section>
-						<h2>Basement Level 1</h2>
-						<p>Press down or up to navigate.</p>
-					</section>
-					<section>
-						<h2>Basement Level 2</h2>
-						<p>Cornify</p>
-						<a class="test" href="http://cornify.com">
-							<img width="280" height="326" src="https://s3.amazonaws.com/hakim-static/reveal-js/cornify.gif" alt="Unicorn">
-						</a>
-					</section>
-					<section>
-						<h2>Basement Level 3</h2>
-						<p>That's it, time to go back up.</p>
-						<a href="#/2" class="image">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="-webkit-transform: rotate(180deg);">
-						</a>
-					</section>
+					<h1>Vad jobbar vi med</h1>
+					<aside class="notes">
+						Vi är konsulter inom programmering.
+						1. Webbutveckling
+						2. Applikationer för iphone/android
+						3. Spel och interaktiva system. 
+					</aside>
 				</section>
-
+		
 				<section>
-					<h2>Slides</h2>
-					<p>
-						Not a coder? No problem. There's a fully-featured visual editor for authoring these, try it out at <a href="http://slid.es" target="_blank">http://slid.es</a>.
-					</p>
-				</section>
-
-				<section>
-					<h2>Point of View</h2>
-					<p>
-						Press <strong>ESC</strong> to enter the slide overview.
-					</p>
-					<p>
-						Hold down alt and click on any element to zoom in on it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Alt + click anywhere to zoom back out.
-					</p>
-				</section>
-
-				<section>
-					<h2>Works in Mobile Safari</h2>
-					<p>
-						Try it out! You can swipe through the slides and pinch your way to the overview.
-					</p>
-				</section>
-
-				<section>
-					<h2>Marvelous Unordered List</h2>
+					<h1>Varför programmera</h1>
 					<ul>
-						<li>No order here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-						<li>Or here</li>
+						<li class="fragment">Man vill slippa göra tråkiga saker</li>
+						<li class="fragment">och göra roliga saker istället</li>
 					</ul>
+					<aside class="notes">
+						Datorer är ganska bra på att göra tråkiga repetitiva saker.
+						Räkna på saker snabbt. 
+					</aside>
 				</section>
 
 				<section>
-					<h2>Fantastic Ordered List</h2>
-					<ol>
-						<li>One is smaller than...</li>
-						<li>Two is smaller than...</li>
-						<li>Three!</li>
-					</ol>
+					<h1>Vad är program</h1>
+					
+					<aside class="notes">
+							Långa listor med instruktioner och vissa instruktioner som kan göra hopp till andra instruktioner. Addera, subtrahera, multiplicera, jämföra saker, flytta saker mellan minne och register.
+						</aside>
 				</section>
-
-				<section data-markdown>
-					<script type="text/template">
-						## Markdown support
-
-						For those of you who like that sort of thing. Instructions and a bit more info available [here](https://github.com/hakimel/reveal.js#markdown).
-
-						```
-						<section data-markdown>
-						  ## Markdown support
-
-						  For those of you who like that sort of thing.
-						  Instructions and a bit more info available [here](https://github.com/hakimel/reveal.js#markdown).
-						</section>
-						```
-					</script>
-				</section>
-
-				<section id="transitions">
-					<h2>Transition Styles</h2>
-					<p>
-						You can select from different transitions, like: <br>
-						<a href="?transition=cube#/transitions">Cube</a> -
-						<a href="?transition=page#/transitions">Page</a> -
-						<a href="?transition=concave#/transitions">Concave</a> -
-						<a href="?transition=zoom#/transitions">Zoom</a> -
-						<a href="?transition=linear#/transitions">Linear</a> -
-						<a href="?transition=fade#/transitions">Fade</a> -
-						<a href="?transition=none#/transitions">None</a> -
-						<a href="?#/transitions">Default</a>
-					</p>
-				</section>
-
-				<section id="themes">
-					<h2>Themes</h2>
-					<p>
-						Reveal.js comes with a few themes built in: <br>
-						<a href="?#/themes">Default</a> -
-						<a href="?theme=sky#/themes">Sky</a> -
-						<a href="?theme=beige#/themes">Beige</a> -
-						<a href="?theme=simple#/themes">Simple</a> -
-						<a href="?theme=serif#/themes">Serif</a> -
-						<a href="?theme=night#/themes">Night</a> <br>
-						<a href="?theme=moon.css#/themes">Moon</a> -
-						<a href="?theme=simple.css#/themes">Simple</a> -
-						<a href="?theme=solarized.css#/themes">Solarized</a>
-					</p>
-					<p>
-						<small>
-							* Theme demos are loaded after the presentation which leads to flicker. In production you should load your theme in the <code>&lt;head&gt;</code> using a <code>&lt;link&gt;</code>.
-						</small>
-					</p>
-				</section>
-
-				<section>
-					<h2>Global State</h2>
-					<p>
-						Set <code>data-state="something"</code> on a slide and <code>"something"</code>
-						will be added as a class to the document element when the slide is open. This lets you
-						apply broader style changes, like switching the background.
-					</p>
-				</section>
-
-				<section data-state="customevent">
-					<h2>Custom Events</h2>
-					<p>
-						Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
-					</p>
-					<pre><code data-trim contenteditable style="font-size: 18px; margin-top: 20px;">
-Reveal.addEventListener( 'customevent', function() {
-	console.log( '"customevent" has fired' );
-} );
-					</code></pre>
-				</section>
-
-				<section>
-					<section data-background="#007777">
-						<h2>Slide Backgrounds</h2>
-						<p>
-							Set <code>data-background="#007777"</code> on a slide to change the full page background to the given color. All CSS color formats are supported.
-						</p>
-						<a href="#" class="image navigate-down">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png">
-						<h2>Image Backgrounds</h2>
-						<pre><code>&lt;section data-background="image.png"&gt;</code></pre>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" data-background-repeat="repeat" data-background-size="100px">
-						<h2>Repeated Image Backgrounds</h2>
-						<pre><code style="word-wrap: break-word;">&lt;section data-background="image.png" data-background-repeat="repeat" data-background-size="100px"&gt;</code></pre>
-					</section>
-				</section>
-
-				<section data-transition="linear" data-background="#4d7e65" data-background-transition="slide">
-					<h2>Background Transitions</h2>
-					<p>
-						Pass reveal.js the <code>backgroundTransition: 'slide'</code> config argument to make backgrounds slide rather than fade.
-					</p>
-				</section>
-
-				<section data-transition="linear" data-background="#8c4738" data-background-transition="slide">
-					<h2>Background Transition Override</h2>
-					<p>
-						You can override background transitions per slide by using <code>data-background-transition="slide"</code>.
-					</p>
-				</section>
-
-				<section>
-					<h2>Clever Quotes</h2>
-					<p>
-						These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;The nice thing about standards is that there are so many to choose from&rdquo;</q> and block:
-					</p>
-					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
-						reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.&rdquo;
-					</blockquote>
-				</section>
-
-				<section>
-					<h2>Pretty Code</h2>
-					<pre><code data-trim contenteditable>
-function linkify( selector ) {
-  if( supports3DTransforms ) {
-
-    var nodes = document.querySelectorAll( selector );
-
-    for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
-      var node = nodes[i];
-
-      if( !node.className ) {
-        node.className += ' roll';
-      }
-    }
-  }
-}
-					</code></pre>
-					<p>Courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
-				</section>
-
-				<section>
-					<h2>Intergalactic Interconnections</h2>
-					<p>
-						You can link between slides internally,
-						<a href="#/2/3">like this</a>.
-					</p>
-				</section>
-
+		
 				<section>
 					<section>
-						<h2>Fragmented Views</h2>
-						<p>Hit the next arrow...</p>
-						<p class="fragment">... to step through ...</p>
-						<ol>
-							<li class="fragment"><code>any type</code></li>
-							<li class="fragment"><em>of view</em></li>
-							<li class="fragment"><strong>fragments</strong></li>
-						</ol>
+						<h1>Språk</h1>
 
 						<aside class="notes">
-							This slide has fragments which are also stepped through in the notes window.
+							Vad har språk med program att göra?
+							Vad är språk? Kan ni räkna upp några?
+							Matematik?
+							Svenska, engelska?
+						</aside>
+					</section>
+
+					<section>
+						<h1>Programspråk</h1>
+
+						<aside class="notes">
+							Känner ni till några programspråk?
+							Vad är liknande, grammatik, regler, meningar.
+						</aside>
+					</section>
+
+					<section>
+						<h3>Maskinkod på hålkort</h3>
+						<img src="images/hålkort.png" />
+
+						<aside class="notes">
+							Instruktioner som datorn direkt kan tolka.
+							Programmet som det ser ut i minnet, och kan köras direkt av datorns CPU (hjärnan)
+							Hål representerar bitar och ett hål är 0 och avsaknad av ett 1. 
+
+							Fungerar bara på den maskin som programmet är tänkt att köras på. Omständigt att flytta till andra typer av datorer. Omöjligt att förstå för en människa, datorer älskar sånt här!
+						</aside>
+					</section>
+
+					<section>
+						<h3>Assembly</h3>
+						<pre>
+							<code>
+model small
+.stack 100h
+ 
+.data
+msg     db      'Hello world!$'
+ 
+.code
+start:
+        mov     ah, 09h   ; Display the message
+        lea     dx, msg
+        int     21h
+        mov     ax, 4C00h  ; Terminate the executable
+        int     21h
+ 
+end start 
+							</code>
+						</pre>
+						<aside class="notes">
+							För att göra livet enklare och istället för att skriva maskinkod direkt.
+							Namn på instruktioner-
+							Lättare att läsa, fungerar bara på en viss typ av maskin, fortfarande rätt svårt, många instruktioner att lära sig utantill, spagettitrasselkod
+							Assemblator översätter till maskinkod.
+							flytta 09h till register ah.
+							ladda effekt address till register dx.
+							anropa interupt 21
+							flytta 4c00h till register ax
+							anropa interupt 21
+						</aside>
+					</section>
+
+					<section>
+						<h3>C</h3>
+						<pre>
+							<code>
+#include &lt;stdio.h&gt;
+int main(int argc, char *argv[]) 
+{
+	printf("Hello Wordl!\n");
+	return 0;
+}
+							</code>
+						</pre>
+						<aside class="notes">
+							C ett av världens mest använda språk,
+							För att få ett körbart program måste man först kompilera programmet, kan kompilera till olika datorer.
+							Men måste kompileras om för varje dator. 
+
+							Mer läsbart än assembler, lättare att hitta fel, kompilatorn varnar för "dumma saker"
+
+							Loopar och variabler
+
+						</aside>
+					</section>
+
+					<section>
+						<h3>C#</h3>
+						<pre>
+							<code>
+// A Hello World! program in C#. 
+using System;
+namespace HelloWorld
+{
+    class Hello 
+    {
+        static void Main() 
+        {
+            Console.WriteLine("Hello World!");
+        }
+    }
+}
+							</code>
+						</pre>
+						<aside class="notes">
+							C# är ett programspråk från Microsoft, kompileras också men istället till ett format som en virtuell maskin kan köra, ett slags program som kör program. 
+							Fördelen är att man inte behöver kompilera om programmet så länge den virtuella maskinen finns för datorn man vill köra programmet på. 
+
+							Objektorienterat, bra på att kapsla in beteende, kompilatorn kan varna för fel.
+
+							Långsammare än C, men bättre möjlighet att sturkturera program
+
+							Java är väldigt likt C# och körs också på en virtuellmaskin
 						</aside>
 					</section>
 					<section>
-						<h2>Fragment Styles</h2>
-						<p>There's a few styles of fragments, like:</p>
-						<p class="fragment grow">grow</p>
-						<p class="fragment shrink">shrink</p>
-						<p class="fragment roll-in">roll-in</p>
-						<p class="fragment fade-out">fade-out</p>
-						<p class="fragment highlight-red">highlight-red</p>
-						<p class="fragment highlight-green">highlight-green</p>
-						<p class="fragment highlight-blue">highlight-blue</p>
+						<h3>Ruby</h3>
+						<pre>
+							<code>
+class Hello
+  def say_hello
+    puts "hello"
+  end
+end
+
+program = Hello.new
+program.say_hello
+							</code>
+						</pre>
+						<aside class="notes">
+							Ruby är ett interpreterat språk.
+							Körs av en tolk och översätts inte till maskinkod, istället tolkar tolken programmet medans det körs.
+
+							Lätt att ändra i program, kan köras på alla datorer där det finns en tolk som förstår språket. Metaprogrammering, alltså propgram som skriver program är lättare.  
+
+							Python, php
+						</aside>
 					</section>
+				</section>	
+
+				<section>
+					<h1>Varför olika språk</h1>
+				</section>
+				<section>
+					<h2>För att olika saker är viktiga</h2>
+					<ul>
+						<li class="fragment">Prestanda</li>
+						<li class="fragment">Portabelt</li>
+						<li class="fragment">Uttrycksfullt</li>
+						<li class="fragment">Struktur</li>
+						<li class="fragment">Tycke och smak</li>
+					</ul>
+				</section>
+				<section>
+					<h1>Vi skall titta på Ruby</h1>
+						<aside class="notes">
+							Vi programmerar mycket i Ruby,
+							Bra för webbutveckling,
+							Kraftfullt lite kod mycket verkstad.
+							Riktigt språk, kan köras på många typer av datorer.
+						</aside>
+				</section>
+				<section>
+					<h1>Centrala begrepp för programmering</h1>
+					<aside class="notes">
+						För att lära sig programmera är det bra om man har ett hum om några begrepp.
+					</aside>
 				</section>
 
 				<section>
-					<h2>Spectacular image!</h2>
-					<a class="image" href="http://lab.hakim.se/meny/" target="_blank">
-						<img width="320" height="299" src="http://s3.amazonaws.com/hakim-static/portfolio/images/meny.png" alt="Meny">
-					</a>
-				</section>
-
-				<section>
-					<h2>Export to PDF</h2>
-					<p>Presentations can be <a href="https://github.com/hakimel/reveal.js#pdf-export">exported to PDF</a>, below is an example that's been uploaded to SlideShare.</p>
-					<iframe id="slideshare" src="http://www.slideshare.net/slideshow/embed_code/13872948" width="455" height="356" style="margin:0;overflow:hidden;border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen> </iframe>
-					<script>
-						document.getElementById('slideshare').attributeName = 'allowfullscreen';
-					</script>
-				</section>
-
-				<section>
-					<h2>Take a Moment</h2>
+					<h2>Variabel</h2>
 					<p>
-						Press b or period on your keyboard to enter the 'paused' mode. This mode is helpful when you want to take distracting slides off the screen
-						during a presentation.
+						En namngiven plats i datorns minne, en slags förvaringslåda. <br />
+						Samma sak i matten (den där x)
+						<br /><br />
+						Variabler i Ruby skrivs med små bokstäver t.ex. 
+					</p>
+
+					<pre>
+						<code>
+							omkrets = 3.145
+						</code>
+					</pre>
+					<img src="images/variabel.png" />
+					<aside class="notes">
+						omkrets är en variabel här, man kan plocka fram värdet som är sparat i variabeln och använda den och man kan spara nya värden i variabeln.
+					</aside>
+				</section>
+
+				<section>
+					<h2>Värde</h2>
+					<p>
+						Ett värde är något man kan lagra i en variabel. 
+					</p>
+					<p>
+						Till exempel ett tal med värdet 12 eller en text med värdet "hej"
+					</p>
+					<aside class="notes">
+						 
+					</aside>
+				</section>
+
+				<section>
+					<h2>Typ</h2>
+					<p>
+						Alla värden har en typ, typen beskriver hur värdet skall tolkas och vad man kan göra med det.<br />
+						Man kan säga att typen gör att innehållet får en betydelse.
+					<br /> <br />
+						Några exempel på några (udda)typer:
+						<ul>
+							<li>
+								Heltal/Integers: 102
+							</li>
+							<li>Flyttal/Floats: 1.20</li>
+							<li>Strängar/Strings: "hejsan"</li>
+							<li>Boolesk/Boolean: true/false</li>
+						</ul>
+
+					</p>
+
+					<aside class="notes">
+						 En dator arbetar bara med binära tal, för att veta hur man skall behandla annan data, strängar t.ex. så representeras detta på olika sätt i datorn men alltid med bitar. Därför behövs olika typer för att beskriva detta. 
+					</aside>
+				</section>
+
+				<section>
+					<h2>Uttryck</h2>
+					<p>
+						Man kan sätta samman värden, variabler, operatorer och funktioner till uttryck. <br />
+						Till exempel kan man använda de fyra räknesätten på tal, och slå samman strängar och olika logiska operatorer för boolesk typer (och, eller, icke)
+					</p>
+					<pre>
+						<code data-trim>
+ett_tal = 1*10+20-2/10
+en_strng = &quot;Hejsan&quot; + &quot; Du gamle indian&quot;
+boolesk = a || b && !c
+						</code>
+					</pre>
+					<aside class="notes">
+						 Uttryck är en kombination värden, variabler, operatorer och funktioner och spottar tillbaka ett nytt värde. 
+						 Uttryck kan vara allt från en enda variabel till ett sammansatt uttryck av många variabler, operatorer och funktioner.
+					</aside>
+				</section>
+
+				<section>
+					<h2>Tilldelning</h2>
+					<p>
+						Innebär att man ger en variabel ett värde. I de flesta språk symboliseras tilldelning med =  <br />
+						<br />
+						Nedan syns ett exempel på tilldelning, vi beräknar omkretsen av en cirkel med uttrycket på höger sida om tilldelningen. Alltså beräknas en cirkels omkrets från radien och tilldelas variabeln omkrets.
+					</p>
+					<pre>
+						<code>
+omkrets = 3.14 * 2 * radie
+						</code>
+					</pre>
+					<aside class="notes">
+						Tilldelning sparar värden från uttryck. 
+					</aside>
+				</section>
+
+				<section>
+					<h2>Funktion</h2>
+					<p>
+						En funktion en uppsättning instruktioner som körs efter varandra, man använder dem för att få byggblock som man kan återanvända <br />
+						Funktioner har ett namn och kan utföra ett ”arbete”. De kan också ta parameterar och skicka tillbaka, returnera, ett värde.
+
+						<pre>
+							<code>
+def omkrets(radie)
+	puts "Beräknar omkretsen av en cirkel"
+	return 3.14*2*radie
+end
+							</code>
+						</pre>
 					</p>
 				</section>
 
 				<section>
-					<h2>Stellar Links</h2>
-					<ul>
-						<li><a href="http://slid.es">Try the online editor</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js">Source code on GitHub</a></li>
-						<li><a href="http://twitter.com/hakimel">Follow me on Twitter</a></li>
-					</ul>
+					<h2>Repetition, Upprepning, Loopar</h2>
+					<h2>Repetition, Upprepning, Loopar</h2>
+					<p>
+						Innebär att programmet kommer upprepa en uppsättning instruktioner tills dess att något vilkor eventuellt avbryter. 
+						<img src="images/loop.png" />
+						
+					</p>
+
+					<pre>
+						<code>
+sum = 0
+i = 0
+while i < 10 do #Upprepa medans i är mindre än 10
+	sum = sum + i
+	i = i + 1
+end
+
+sum = 0
+for i in 0..9
+	sum = sum + i
+end	
+						</code>
+					</pre>
+					<aside class="notes">
+						For, while, each, reduce, map osv
+					</aside>
 				</section>
 
 				<section>
-					<h1>THE END</h1>
-					<h3>BY Hakim El Hattab / hakim.se</h3>
+					<h2>Alternativ</h2>
+					<p>
+						Betyder att datorn kan välja väg med hjälp av logiska uttryck. Alltså uttryck som antingen blir sanna eller falska. <br /><br /> == Jämför värden, i exemplet jämförs värdet 42 med det som finns i variabeln svar.  <br />
+						<img src="images/if.png" />
+						<pre>
+							<code>
+puts "Vad är svaret på allt?"
+svar = gets.to_i() #Läs in tal från tangentbordet
+if(svar == 42)
+	puts "Rätt svar" 
+else
+	puts "Fel svar"
+end	
+							</code>
+						</pre>	
+					</p>
+					<aside class="notes">
+						Datorn kan välja väg genom programmet beroende på hur uttryck tolkas. 
+					</aside>
 				</section>
 
-			</div>
+				<section>
+					<h1>Objektorienterad programmering / OOP</h1>
+					<p>Ganska avancerat koncept</p>
+					<aside class="notes">
+						Vi går över på att prata om OOP, kallar det OOP.
+						Ruby är ett objektorienterat språk.<br />
+						Betyder att man bryter ned problem genom att fundera på hur objekt kan samverka. Istället för att bara ordna program med hjälp av funktioner bryter man ner programmet i objekt. 
+						Objekten inkapslar både funktioner och data
+					</aside>
+				</section>
+				<section>
+					<h2>OOP - Klasser</h2>
+					<p>
+						Klasser är en användardefinierad typ. <br />
+						På samma sätt som heltal eller strängar i Ruby. <br />
 
+						En instans av en klass kallas objekt. Klassen är abstrakt, t.ex. Bok medan en instans av en klass kan vara en viss bok. <br />
+
+						När man gör nya objekt från en klass i Ruby använder man funktionen new på klassen.  
+
+						<pre>
+							<code>
+class Bok #Klass definition
+  def initialize(name)
+    @name = name
+  end
+
+  def name()
+    return @name
+  end	
+end 
+
+hitchiker = Bok.new("The Hitchhiker's Guide to the Galaxy")
+puts hitchiker.name() #Skriver ut namnet på boken
+
+							</code>
+						</pre>
+
+					</p>
+					<aside class="notes">
+						Initialize constructor. 
+						Visa anrop till name i puts
+
+					</aside>
+				</section>
+				<section>
+					<h2>Konstruktor</h2>
+					<p>
+						Har hand om att ställa in det nya objektet så att det är redo att användas.
+
+						<br /><br/>
+						Funktionen heter initialize och kan ta parameterar
+						<pre>
+							<code>
+class Bok
+  def initialize(name)  #Konstruktor
+    @name = name
+  end
+
+  def name()
+    return @name
+  end	
+end 
+
+hitchiker = Bok.new("The Hitchhiker's Guide to the Galaxy")
+puts hitchiker.name() #Skriver ut namnet på boken
+
+							</code>
+						</pre>
+					</p>
+					<aside class="notes">
+						inga, en eller flera parametrar
+						värdet i new skickas till initialize		
+					</aside>
+				</section>
+
+				<section>
+					<h2>Instansvariabler</h2>
+					<p>
+						Är variabler som kan nås från alla funktioner i klassen.<br />
+						@name är en instansvariabel. Det betyder att objektet har en variabel som kan nås från alla funktioner. Gör vi en ny Bok kommer den få en egen instansvariabel.
+						<br /><br/>
+						Instansvariabler startar alltid med ett @
+						<pre>
+							<code>
+class Bok
+  def initialize(name)  #Konstruktor
+    @name = name
+  end
+
+  def name()
+    return @name
+  end	
+end 
+
+hitchiker = Bok.new("The Hitchhiker's Guide to the Galaxy")
+puts hitchiker.name() #Skriver ut namnet på boken
+
+							</code>
+						</pre>
+					</p>
+					<aside class="notes">
+						Nås ifrån olika funktioner i en klass.
+						Delas inte mellan olika objekt 		
+					</aside>
+				</section>
+				<section>
+					<h1>nog</h1>
+					<aside class="notes">
+						pratat mycket, väldigt abstrakt och ganska läskigt.
+						Man behöver inte kunna allt direkt, läs program,  		
+					</aside>
+				</section>
+				<section>
+					<h1>Demon/Frågor</h1>
+					<p><a href="http://tryruby.org/">http://tryruby.org</a> / kidsruby</p>
+				</section>
+			</div>
 		</div>
 
 		<script src="lib/js/head.min.js"></script>
@@ -361,13 +553,14 @@ function linkify( selector ) {
 				controls: true,
 				progress: true,
 				history: true,
-				center: true,
-
+				center: true,  
+				
 				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
 				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
 
 				// Optional libraries used to extend on reveal.js
 				dependencies: [
+					{ src: 'plugin/leap/leap.js', async: true },
 					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
 					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
 					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
